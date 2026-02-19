@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulasi Teknik Intruksi CMD</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, red 50%, white 50%);
+    padding:20px;
+}
+
+/* Bagian identitas */
+.identitas{
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* Judul */
+h1{
+    text-align:center;
+    font-size:36px;
+    margin:20px 0;
+}
+
+/* Subjudul */
+.subjudul{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+/* Box simulasi */
+.box{
+    border:2px solid black;
+    padding:20px;
+    background:#f4f4f4;
+    width:90%;
+    max-width:800px;
+    margin-bottom:20px;
+}
+
+/* Tombol */
+button{
+    padding:10px 20px;
+    border:2px solid black;
+    background:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#ddd;
+}
+
+/* Judul tabel */
+h2{
+    text-align:center;
+    margin:40px 0 20px 0;
+}
+
+/* Container tabel */
+.table-container{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Tabel */
+table{
+    width:100%;
+    border-collapse:collapse;
+    text-align:center;
+}
+
+thead{
+    background:#b22222;
+    color:white;
+}
+
+th, td{
+    padding:15px;
+    border:1px solid #999;
+}
+
+tbody td{
+    background:#f0f0f0;
+}
+
+tr:hover td{
+    background:#ddd;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    h1{font-size:22px;}
+    th,td{font-size:13px;padding:8px;}
+}
+</style>
+</head>
+<body>
+
+<div class="identitas">
+Nama : Muhammad Irsyad Mubarak<br>
+Kelas : X TJKT
+</div>
+
+<h1>SIMULASI TEKNIK INTRUKSI CMD</h1>
+
+<p class="subjudul">&gt; Sistem Keamanan Jaringan - Mode Edukasi</p>
+
+<div class="box">
+untuk tes jaringan pakai CMD buka CMD (windows + R , ketik CMD) lalu gunakan perintah seperti google.com untuk cek koneksi dan kecepatan respons (semakin kecil waktu/ms semakin baik)
+<br><br>
+
+&gt; Mengecek koneksi jaringan...<br><br>
+&gt; ping 192.168.1.1<br><br>
+&gt; Reply from 192.168.1.1: bytes=32 time=1ms TTL=64<br><br>
+
+&gt; Mengecek konfigurasi IP...<br><br>
+&gt; ipconfig<br><br>
+&gt; IPv4 Address : 192.168.1.10<br><br>
+
+&gt; Scan port (simulasi)...<br><br>
+&gt; Checking port 80 ... OPEN<br><br>
+&gt; Checking port 443 ... OPEN
+</div>
+
+    <title>IP Address Kelas A - E</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0077cc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0077cc;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #0077cc;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>IP Address Kelas A sampai E</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Kelas A</h2>
+        <p><b>Range:</b> 1.0.0.0 – 126.255.255.255</p>
+        <p><b>Subnet Mask:</b> 255.0.0.0 (/8)</p>
+        <p><b>Kegunaan:</b> Jaringan besar</p>
+    </div>
+
+    <div class="card">
+        <h2>Kelas B</h2>
+        <p><b>Range:</b> 128.0.0.0 – 191.255.255.255</p>
+        <p><b>Subnet Mask:</b> 255.255.0.0 (/16)</p>
+        <p><b>Kegunaan:</b> Jaringan menengah</p>
+    </div>
+
+    <div class="card">
+        <h2>Kelas C</h2>
+        <p><b>Range:</b> 192.0.0.0 – 223.255.255.255</p>
+        <p><b>Subnet Mask:</b> 255.255.255.0 (/24)</p>
+        <p><b>Kegunaan:</b> Jaringan kecil</p>
+    </div>
+
+    <div class="card">
+        <h2>Kelas D</h2>
+        <p><b>Range:</b> 224.0.0.0 – 239.255.255.255</p>
+        <p><b>Kegunaan:</b> Multicast</p>
+    </div>
+
+    <div class="card">
+        <h2>Kelas E</h2>
+        <p><b>Range:</b> 240.0.0.0 – 255.255.255.255</p>
+        <p><b>Kegunaan:</b> Eksperimen</p>
+    </div>
+
+    <div class="card">
+        <h2>Ringkasan</h2>
+        <table>
+            <tr>
+                <th>Kelas</th>
+                <th>Range Awal</th>
+                <th>Subnet</th>
+                <th>Kegunaan</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>1 – 126</td>
+                <td>/8</td>
+                <td>Jaringan Besar</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>128 – 191</td>
+                <td>/16</td>
+                <td>Jaringan Menengah</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>192 – 223</td>
+                <td>/24</td>
+                <td>Jaringan Kecil</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>224 – 239</td>
+                <td>-</td>
+                <td>Multicast</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>240 – 255</td>
+                <td>-</td>
+                <td>Eksperimen</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 - Belajar Jaringan Komputer
+</footer>
+
+</body>
+</html>
+
+
+
+<h2>Tabel 20 Alat-Alat Elektronik</h2>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>Nama Alat Elektronik</th>
+<th>Voltase (V)</th>
+<th>Daya (Watt)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>1</td><td>Televisi</td><td>220 V</td><td>100 W</td></tr>
+<tr><td>2</td><td>Kipas Angin</td><td>220 V</td><td>60 W</td></tr>
+<tr><td>3</td><td>Lampu LED</td><td>220 V</td><td>10 W</td></tr>
+<tr><td>4</td><td>Kulkas</td><td>220 V</td><td>150 W</td></tr>
+<tr><td>5</td><td>Rice Cooker</td><td>220 V</td><td>400 W</td></tr>
+<tr><td>6</td><td>Setrika</td><td>220 V</td><td>350 W</td></tr>
+<tr><td>7</td><td>Mesin Cuci</td><td>220 V</td><td>500 W</td></tr>
+<tr><td>8</td><td>Charger HP</td><td>5 V</td><td>10 W</td></tr>
+<tr><td>9</td><td>AC</td><td>220 V</td><td>800 W</td></tr>
+<tr><td>10</td><td>Komputer</td><td>220 V</td><td>250 W</td></tr>
+<tr><td>11</td><td>Laptop</td><td>19 V</td><td>65 W</td></tr>
+<tr><td>12</td><td>Printer</td><td>220 V</td><td>300 W</td></tr>
+<tr><td>13</td><td>Blender</td><td>220 V</td><td>200 W</td></tr>
+<tr><td>14</td><td>Microwave</td><td>220 V</td><td>1000 W</td></tr>
+<tr><td>15</td><td>Pompa Air</td><td>220 V</td><td>125 W</td></tr>
+<tr><td>16</td><td>Dispenser</td><td>220 V</td><td>350 W</td></tr>
+<tr><td>17</td><td>Hair Dryer</td><td>220 V</td><td>600 W</td></tr>
+<tr><td>18</td><td>Speaker Aktif</td><td>220 V</td><td>50 W</td></tr>
+<tr><td>19</td><td>Router WiFi</td><td>12 V</td><td>15 W</td></tr>
+<tr><td>20</td><td>Kamera CCTV</td><td>12 V</td><td>20 W</td></tr>
+</tbody>
+</table>
+</div>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtualisasi - VirtualBox, VMware, Proxmox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f9;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: black;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Teknologi Virtualisasi</h1>
+    <p>VirtualBox, VMware, dan Proxmox</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>1. VirtualBox</h2>
+        <p><strong>Cara Kerja:</strong></p>
+        <ul>
+            <li>Membuat mesin virtual di dalam komputer utama (host).</li>
+            <li>Menggunakan teknologi virtualisasi CPU.</li>
+        </ul>
+
+        <p><strong>Fungsi:</strong></p>
+        <ul>
+            <li>Menjalankan sistem operasi lain.</li>
+            <li>Simulasi jaringan.</li>
+        </ul>
+
+        <p><strong>Manfaat:</strong></p>
+        <ul>
+            <li>Gratis dan mudah digunakan.</li>
+            <li>Cocok untuk belajar.</li>
+        </ul>
+
+        <p><strong>Konfigurasi Dasar:</strong></p>
+        <ul>
+            <li>Install aplikasi.</li>
+            <li>Buat VM baru.</li>
+            <li>Atur RAM, CPU, dan Storage.</li>
+            <li>Masukkan file ISO dan jalankan.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>2. VMware</h2>
+        <p><strong>Cara Kerja:</strong></p>
+        <ul>
+            <li>Menggunakan hypervisor untuk menjalankan VM.</li>
+            <li>Bisa untuk desktop maupun server.</li>
+        </ul>
+
+        <p><strong>Fungsi:</strong></p>
+        <ul>
+            <li>Virtualisasi server.</li>
+            <li>Testing aplikasi profesional.</li>
+        </ul>
+
+        <p><strong>Manfaat:</strong></p>
+        <ul>
+            <li>Performa stabil.</li>
+            <li>Banyak fitur jaringan.</li>
+        </ul>
+
+        <p><strong>Konfigurasi Dasar:</strong></p>
+        <ul>
+            <li>Install VMware.</li>
+            <li>Create New VM.</li>
+            <li>Atur CPU, RAM, Storage.</li>
+            <li>Konfigurasi network dan jalankan.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>3. Proxmox</h2>
+        <p><strong>Cara Kerja:</strong></p>
+        <ul>
+            <li>Hypervisor tipe 1 (langsung ke hardware).</li>
+            <li>Dikelola melalui web browser.</li>
+        </ul>
+
+        <p><strong>Fungsi:</strong></p>
+        <ul>
+            <li>Virtualisasi server dan data center.</li>
+            <li>Mengelola banyak VM sekaligus.</li>
+        </ul>
+
+        <p><strong>Manfaat:</strong></p>
+        <ul>
+            <li>Mendukung clustering.</li>
+            <li>Backup dan restore mudah.</li>
+        </ul>
+
+        <p><strong>Konfigurasi Dasar:</strong></p>
+        <ul>
+            <li>Install Proxmox di server.</li>
+            <li>Akses melalui browser (https://IP:8006).</li>
+            <li>Buat VM dan atur resource.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Perbandingan</h2>
+        <table>
+            <tr>
+                <th>Fitur</th>
+                <th>VirtualBox</th>
+                <th>VMware</th>
+                <th>Proxmox</th>
+            </tr>
+            <tr>
+                <td>Tipe</td>
+                <td>Desktop</td>
+                <td>Desktop/Server</td>
+                <td>Server</td>
+            </tr>
+            <tr>
+                <td>Harga</td>
+                <td>Gratis</td>
+                <td>Berbayar</td>
+                <td>Gratis (Community)</td>
+            </tr>
+            <tr>
+                <td>Cocok Untuk</td>
+                <td>Belajar</td>
+                <td>Profesional</td>
+                <td>Data Center</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 - Materi Virtualisasi
+</footer>
+
+</body>
+</html>
+
+
+<h2>TABEL PROFESI BIDANG DIGITAL</h2>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Jenis Profesi</th>
+<th>Deskripsi Singkat Profesi</th>
+<th>Contoh Pekerjaan</th>
+<th>Peluang Usaha</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>Konten Creator</td><td>Membuat dan membagikan konten digital yang menarik</td><td>YouTuber, TikToker, Podcaster</td><td>Monetisasi konten, endorsement</td></tr>
+<tr><td>Desain Grafis</td><td>Mendesain visual media cetak dan digital</td><td>Desainer logo, poster</td><td>Jasa desain, freelance</td></tr>
+<tr><td>UI/UX Designer</td><td>Merancang tampilan dan pengalaman pengguna</td><td>UI/UX Designer aplikasi</td><td>Jasa desain aplikasi</td></tr>
+<tr><td>Web Developer</td><td>Membangun dan mengelola website</td><td>Frontend/Backend Dev</td><td>Jasa pembuatan website</td></tr>
+<tr><td>Digital Marketer</td><td>Mempromosikan produk secara online</td><td>SEO, Ads Specialist</td><td>Agensi digital</td></tr>
+</tbody>
+</table>
+</div>
+
+</body>
+</html>
